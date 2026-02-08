@@ -62,7 +62,6 @@ def filter_gdp_data(data, config):
         country = [config.get("country").strip()] 
 
     year_filter = config.get("year") 
-    operation=config.get("operation")
 
     # Filter rows where continent matches AND year matches
     if config.get('operation')!='Average_c':
@@ -83,16 +82,7 @@ def filter_gdp_data(data, config):
                 data
             )
         )
-    print(filtered)
-    return filtered, operation
+
+    return filtered
 
 
-# ---------- Load Config ----------
-def load_config(file_path):
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        raise Exception("Config file not found. Please check the path.")
-    except json.JSONDecodeError:
-        raise Exception("Config file is not a valid JSON.")
