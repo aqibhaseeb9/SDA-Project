@@ -1,7 +1,8 @@
 {
-	"continent": "Asia",
+	"continent": "Europe",
+	"country": "Europe & Central Asia",
 	"year": 2000,
-	"operation":"Sum",
+	"operation":"Average_c",
 	"output":"dashboard"
 
 }
