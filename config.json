@@ -1,8 +1,8 @@
 {
-	"continent": "Europe",
-	"country": "Europe & Central Asia",
+	"continent": "Asia",
+	"country": "Pakistan",
 	"year": 2000,
-	"operation":"Average_c",
+	"operation":"Average_r",
 	"output":"dashboard"
 
 }
