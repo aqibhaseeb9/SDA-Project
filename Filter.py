@@ -87,12 +87,3 @@ def filter_gdp_data(data, config):
     return filtered, operation
 
 
-# ---------- Load Config ----------
-def load_config(file_path):
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        raise Exception("Config file not found. Please check the path.")
-    except json.JSONDecodeError:
-        raise Exception("Config file is not a valid JSON.")
