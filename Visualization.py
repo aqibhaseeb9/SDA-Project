@@ -2,7 +2,7 @@
 import tkinter as tk
 import matplotlib.ticker as mtick
 
-def Graph_Visualizations(data):
+def Graph_Visualizations(data): 
     Pie_Chart_region(data)
     Bar_plot_regions(data)
     Scatter_plot_Year(data)

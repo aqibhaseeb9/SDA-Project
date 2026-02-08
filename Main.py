@@ -5,6 +5,7 @@ from Visualization import Graph_Visualizations
 
 def main():
     # Load GDP data
+
     data = load_gdp_data("gdp.csv")
     print("Total records loaded:", len(data))
     print("Sample record:", data[0])
